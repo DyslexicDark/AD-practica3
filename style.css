@@ -6,6 +6,9 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .padre {
     display: flex;
     flex-flow: column nowrap;
@@ -18,8 +21,8 @@ body{
     display: flex;
     flex-flow: column nowrap;
 }
-.menu {
-    background-color: rgba(0, 0, 0, -1);
+.menu{
+    background-color: rgba(0, 0, 0, .1);
     display: flex;
     flex-flow: row nowrap;
     height: 100px;
@@ -34,16 +37,19 @@ body{
     font-size: 30px;
 }
 .logo a:hover{
-    color:#000;
+    color:#343434;
 }
 .nav{
-    background-color: #345678;
     flex: 5 1 auto;
-    height: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .nav a{
-    background-color: #fff;
-    font-size: 11px;
+    color: #fff;
+    font-size: 18px;
     text-transform: uppercase;
     padding: 0 10px;
     letter-spacing: 2px;
@@ -57,52 +63,87 @@ body{
 }
 .social a{
     font-size: 18px;
-    color: white;
+    color: #fff;
     padding: 0 5px;
 }
 .social a:hover{
-    color: #345678;
+    color: #343434;
 }
 .textoprincipal{
-    background-color: #567890;
+    background: #567890;
 }
 h1 {
-    background-color: #123456;
+    background: #123456;
 }
 .section{
-    background-color: #000;
+    background: #000;
     display: flex;
 }
 .articulos{
-    background-color: #345678;
+    background: #f7f7f7;
     flex: 2 1 auto;
     display: flex;
     flex-flow: row wrap;
 }
 .article{
-    background-color: #789012;
     flex: 1 1 40%;
-
+    color: #444;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+.article img{
+    width: 100%;
+}
+.article h3{
+    flex: 1 1 45%;
+    color: fff;
+    font-size: 16px;
+    padding: 10p 0;
+    margin-top: -80px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0 0;
+}
+.article h2{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 10px 0;
 }
 .navegacion{
-    background-color: #901234;
-    flex: 1 1 100%
+    flex: 1 1 100%;
+    height: 50%;
+    background: #000;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navegacion a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: 'Lora', serif;
 }
 .aside{
-    background-color: #567890;
     flex: 1 1 auto;
+    background: #fff;
 }
 .publicidad{
-    background-color: #789012;
+}
+.publicidad img{
+    width: 200px;
 }
 .footer{
-    background-color: #000;
     display: flex;
     justify-content: center;
+    background: #000;
 }
 .pie{
-    background-color: #901234;
-    width: 300px;
+    width: fit-content;
+}
+.pie a{
+    color: #fff;
+    font-size: 30px;
 }
 
 @media all and (max-width: 800px)

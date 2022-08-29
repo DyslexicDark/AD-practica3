@@ -2,6 +2,7 @@
 <html lang: "en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=dvice-width, initial-scale=1.0">
   <title> Practica  con Flexbox </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,7 @@
 </head>
 <body>
     <div class="padre">
-        <header class="header">
+        <header id="header" class="header">
             <div class="menu">
                 <div class="logo">
                     <a href="index.html">Logo</a>
@@ -39,15 +40,19 @@
                         Contacto
                     </a>
                 </nav>
-        </header>
-        <header class="header">
-            <div class="menu"></div>
-            <div class="logo"></div>
-            <div class="nav"></div>
-            <div class="social"></div>
+                <div class="social">
+                    <a href="#">
+                        <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-sign-in-alt" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
             <div class="textoPrincipal">
-                <h1></h1>
+                <h1>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint suscipit reprehenderit, dolores incidunt eaque rem et harum illum ducimus quaerat, doloribus accusantium eum nulla officia minus odio quisquam deleniti obcaecati nobis? Veniam, deserunt dolor. Doloremque numquam, omnis distinctio modi alias reprehenderit cupiditate iure molestias! Hic rerum maiores expedita vitae corrupti.
+                </h1>   
             </div>
         </header>
         <section class="section">
@@ -57,7 +62,7 @@
                     <h3>25 de agosto del 2022</h3>
                     <h2>Titulo del articulo</h2>
                     <p>
-                        texto
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui accusantium numquam, laborum magni illum sunt eius enim ducimus aperiam repellendus delectus ullam, excepturi explicabo assumenda voluptas dolor beatae reprehenderit minima?
                     </p>
                 </article>
                 <article class="article">
@@ -65,7 +70,7 @@
                     <h3>25 de agosto del 2022</h3>
                     <h2>Titulo del articulo</h2>
                     <p>
-                        texto
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ipsam nihil earum, velit eos provident tenetur assumenda facere itaque explicabo cumque doloribus deleniti repellendus numquam? Nesciunt qui dolorem neque alias.
                     </p>
                 </article>
                 <article class="article">
@@ -73,7 +78,7 @@
                     <h3>25 de agosto del 2022</h3>
                     <h2>Titulo del articulo</h2>
                     <p>
-                        texto
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ipsam nihil earum, velit eos provident tenetur assumenda facere itaque explicabo cumque doloribus deleniti repellendus numquam? Nesciunt qui dolorem neque alias.
                     </p>
                 </article>
                 <article class="article">
@@ -81,11 +86,11 @@
                     <h3>25 de agosto del 2022</h3>
                     <h2>Titulo del articulo</h2>
                     <p>
-                        texto
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ipsam nihil earum, velit eos provident tenetur assumenda facere itaque explicabo cumque doloribus deleniti repellendus numquam? Nesciunt qui dolorem neque alias.
                     </p>
                 </article>
                 <nav class="navegacion">
-                    <a href="#">Inicio</a>
+                    <a href="#header">Inicio</a>
                     <a href="#">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
@@ -107,7 +112,7 @@
         </section>
         <footer class="footer">
             <nav class="pie">
-                <a href="https://www.facebook.com/GurrolaPerez">Desarrollado por </a>
+                <a href="https://www.facebook.com/GurrolaPerez">Desarrollado por Gustavo Gurrola Perez</a>
             </nav>
         </footer>
     </div>
